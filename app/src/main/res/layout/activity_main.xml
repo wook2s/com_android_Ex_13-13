@@ -8,6 +8,12 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="진행률 : " />
+
     <SeekBar
         android:id="@+id/sb1"
         android:layout_width="match_parent"
@@ -15,24 +21,41 @@
         android:max="100"
         android:progress="10" />
 
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="진행률 : " />
+
     <SeekBar
         android:id="@+id/sb2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+
         android:max="100"
         android:progress="30" />
 
     <Button
-        android:layout_marginTop="30dp"
+        android:id="@+id/btnStart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="시작"
-        android:id="@+id/btnStart"
-        />
+        android:layout_marginTop="30dp"
+        android:text="시작" />
 
-
-
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="리셋" />
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="중지" />
 
 
 </LinearLayout>
